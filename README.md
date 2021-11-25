@@ -23,7 +23,9 @@ A photo gallery that allows a user to see the description of each photo by click
 4. The last requirement was the "like" button.
     - Added a state to show the likes.
     - Made a function that just adds 1 each time the button is clicked.
+    - 
 
 5. As with all of my projects thus far, the final step is to make it pretty.
     - First I copy pasted the same goat photo a few times for testing of my styling.
-    -
+    - Styled the divs to appear side by side vertically and added padding to the bottoms.
+    - Added a new conditional to fix the grammar on my like count.
