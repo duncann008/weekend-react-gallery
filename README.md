@@ -21,3 +21,5 @@ A photo gallery that allows a user to see the description of each photo by click
     - Used a ternary operator to determine what gets displayed: the image(via html img srcing with the path property) or the description property as a string.
 
 4.  The last requirement was the "like" button.
+    - Added a state to show the likes.
+    - Made a function that just adds 1 each time the button is clicked.
