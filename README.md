@@ -20,6 +20,10 @@ A photo gallery that allows a user to see the description of each photo by click
     - Made a function that swaps the usestate to its opposite, in this case true > false or false > true, and also console.logs the state to confirm it's working properly.
     - Used a ternary operator to determine what gets displayed: the image(via html img srcing with the path property) or the description property as a string.
 
-4.  The last requirement was the "like" button.
+4. The last requirement was the "like" button.
     - Added a state to show the likes.
     - Made a function that just adds 1 each time the button is clicked.
+
+5. As with all of my projects thus far, the final step is to make it pretty.
+    - First I copy pasted the same goat photo a few times for testing of my styling.
+    -

@@ -16,20 +16,24 @@ function GalleryItem({photo}) {
 // Adds a like to the photo
     const likeButton = () =>    {
         setShowLikes(showLikes + 1);
-        console.log(showLikes);
+        console.log(showLikes);  // Technically displays the previous state but that's okay for testing.
     }
     
 
 // Returns the individual photo blocks with like button and likes diplayed
     return (
-        <p key={photo.id}>
-            <button onClick={displayChange}>
+        <div key={photo.id} className="galleryDiv">
+            <div>
+            <button onClick={displayChange} className="image">
                 {showImage ? <img src={photo.path}></img> : <p>{photo.description}</p>}
             </button>
+            </div>
             <button onClick={likeButton}>Like</button>
+            <div>
             <span>{showLikes} people have liked this.</span>
-
-        </p>
+            </div>
+        
+        </div>
   )
 }
 
