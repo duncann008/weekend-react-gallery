@@ -19,6 +19,19 @@ function GalleryItem({photo}) {
         console.log(showLikes);  // Technically displays the previous state but that's okay for testing.
     }
     
+// Better grammar for our like count.
+    const personOrPeople = () =>    {
+        if (showLikes === 0)    {
+            return <span>Nobody has liked this yet.</span>
+        }
+        else if (showLikes === 1)    {
+            return <span>{showLikes} person has liked this.</span>
+        }
+        else    {
+            return <span>{showLikes} people have liked this.</span>;
+        }
+    }
+
 
 // Returns the individual photo blocks with like button and likes diplayed
     return (
@@ -30,7 +43,7 @@ function GalleryItem({photo}) {
             </div>
             <button onClick={likeButton}>Like</button>
             <div>
-            <span>{showLikes} people have liked this.</span>
+            {personOrPeople()}
             </div>
         
         </div>
