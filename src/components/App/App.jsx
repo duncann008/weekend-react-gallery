@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import GalleryList from '../GalleryList/GalleryList';
 import GalleryItem from '../GalleryItem/GalleryItem';
 
+
 function App() {
 
   const [galleryList, setGalleryList] = useState([]);
